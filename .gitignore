@@ -31,7 +31,7 @@ node_modules/
 *.js.map
 *.css.map
 npm-debug.log
-
+.idea
 .DS_Store
 
 *_env
