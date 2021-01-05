@@ -11,16 +11,16 @@
       </ul>
     {{end}}
 
-    <h1>{{ t "auth.passwords.forgot_password" }}</h1>
-    <h2>{{ t "auth.passwords.forgot_password_desc" }}</h2>
+    <h1>Forgot Password?</h1>
+    <h2>Enter your email address & we'll send you a link to reset your password.</h2>
     <form action='{{.AuthURL "password/recover"}}' method="POST">
       <ul class="auth-form">
         <li>
-          <label for="email">{{t "auth.form.email"}}</label>
-          <input name="email" id="email" type="email" placeholder='{{t "auth.form.placeholder"}}' />
+          <label for="email">Email</label>
+          <input name="email" id="email" type="email" placeholder='Email' />
         </li>
         <li>
-          <button type="submit" class="button button__primary">{{t "auth.form.forgot_password"}}</button>
+          <button type="submit" class="button button__primary">Forgot Password?</button>
         </li>
     </form>
   </div>

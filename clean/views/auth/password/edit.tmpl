@@ -11,17 +11,17 @@
       </ul>
     {{end}}
 
-    <h1>{{t "auth.passwords.reset_password"}}</h1>
+    <h1>Reset Password</h1>
     <form action='{{.AuthURL "password/update"}}' method="POST">
       <input type="hidden" name="reset_password_token" value="{{reset_password_token}}">
 
       <ul class="auth-form">
         <li>
-          <label for="password">{{t "auth.form.new_password"}}</label>
-          <input type="password" id="password" name="new_password" placeholder='{{ t "auth.form.new_password_placeholder" }}'/>
+          <label for="password">New Password</label>
+          <input type="password" id="password" name="new_password" placeholder='New Password'/>
         </li>
         <li>
-          <button type="submit" class="button button__primary">{{t "auth.form.reset_password"}}</button>
+          <button type="submit" class="button button__primary">Reset</button>
         </li>
       </ul>
     </form>

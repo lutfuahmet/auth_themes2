@@ -10,31 +10,31 @@
     </ul>
     {{end}}
 
-    <h1>{{ t "auth.sign_up" }}</h1>
+    <h1>Sign Up</h1>
     <a class="signup-link" href='{{.AuthURL "login"}}'>
-      {{t "auth.links.sign_in"}}
+      Sign In
     </a>
 
     {{if .Auth.GetProvider "password"}}
     <form action='{{.AuthURL "password/register" }}' method="POST">
       <ul class="auth-form">
         <li>
-          <label for="login">{{t "auth.form.email"}}</label>
-          <input name="login" type="email" required pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" placeholder='{{t " auth.form.email_placeholder "}}' value='{{.FormValue " login "}}'/>
+          <label for="login">Email</label>
+          <input name="login" type="email" required pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" placeholder='Email' value='{{.FormValue " login "}}'/>
         </li>
 
         <li>
-          <label for="password">{{t "auth.form.password"}}</label>
-          <input type="password" required class="form-control" name="password" placeholder='{{t "auth.form.password_placeholder"}}'>
+          <label for="password">Password</label>
+          <input type="password" required class="form-control" name="password" placeholder='Password'>
         </li>
 
         <li>
-          <label for="confirm_password">{{t "auth.form.password_confirm"}}</label>
-          <input name="confirm_password" required type="password" placeholder='{{t "auth.form.password_confirm_placeholder"}}' />
+          <label for="confirm_password">Confirm Password</label>
+          <input name="confirm_password" required type="password" placeholder='Confirm Password' />
         </li>
 
         <li>
-          <button type="submit" class="button button__primary">{{ t "auth.form.sign_up" }}</button>
+          <button type="submit" class="button button__primary">Sign Up</button>
         </li>
       </ul>
     </form>
